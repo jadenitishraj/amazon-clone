@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Clone — Storefront</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="Amazon home">
+      <span class="logo-text">amazon</span><span class="logo-dot">.clone</span>
+    </a>
+    <form class="search" role="search" onsubmit="return false;">
+      <input type="search" id="search-input" placeholder="Search Amazon Clone" aria-label="Search products" />
+      <button type="submit" class="search-btn" aria-label="Search">🔍</button>
+    </form>
+    <button class="cart" aria-label="Cart">
+      <span class="cart-icon">🛒</span>
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Today's deals</h1>
+    <section class="product-grid" id="product-grid" aria-label="Products"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by the AI Squad — Full-Stack Engineer, reviewed by the Tech Lead, validated by QA.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
